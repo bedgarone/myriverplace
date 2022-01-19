@@ -1,0 +1,82 @@
+//pallete colors
+$teal: #7eb5a6;
+$gold: #d3ab61;
+$brown: #5a4818;
+$beige: #e8d0b3;
+$text: rgb(26, 26, 26);
+$greybeige: #f5f2ef;
+
+.main {
+  min-height: 100vh;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main-image {
+  background-image: url("/assets/main01.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.apart-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  transition: 0.5s;
+  &:hover {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+  }
+}
+
+.apart-image {
+  position: relative;
+  height: 10rem;
+  img {
+    object-fit: cover;
+  }
+}
+
+.apart-detail {
+  background-color: $greybeige;
+  padding: 1rem;
+}
+
+.apart-title {
+  color: $brown;
+  font-size: 1.5rem;
+}
+
+.apart-numb {
+  position: absolute;
+  font-size: 6rem;
+  font-weight: lighter;
+  color: #d6cfc8;
+  line-height: 0;
+}
+
+.apart-building {
+  color: $teal;
+}
+
+.apart-description {
+  color: $brown;
+}
+
+.apart-btn {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: $gold;
+  color: white;
+  margin: 0.5rem 0 0 0;
+}
