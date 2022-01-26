@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ApartCard from "../components/ApartCard";
+import TourCard from "../components/TourCard";
 
 export default function Home() {
   return (
@@ -15,7 +16,16 @@ export default function Home() {
 
       <main className="main">
         <div className="main-image"></div>
-        <ApartCard />
+        <div className="apart-col">
+          <ApartCard />
+          <ApartCard />
+        </div>
+        <div className="tour-col">
+          <div className="tour-sect-title">
+            <i class="bi bi-signpost-2-fill"></i> Tours
+          </div>
+          <TourCard />
+        </div>
       </main>
     </div>
   );

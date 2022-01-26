@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 //pallete colors
 $teal: #7eb5a6;
 $gold: #d3ab61;
@@ -25,16 +27,24 @@ $greybeige: #f5f2ef;
   font-size: 1.5rem;
 }
 
-.apart-container {
+.apart-container,
+.tour-container {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
   transition: 0.5s;
+  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &:hover {
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
     transition: 0.5s;
+    .tour-detail {
+      background-color: $teal;
+      transition: 0.5s;
+    }
   }
 }
 
@@ -65,7 +75,7 @@ $greybeige: #f5f2ef;
 }
 
 .apart-building {
-  color: $teal;
+  color: $gold;
 }
 
 .apart-description {
@@ -79,4 +89,136 @@ $greybeige: #f5f2ef;
   background-color: $gold;
   color: white;
   margin: 0.5rem 0 0 0;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($gold, 5%);
+    transition: 0.5s;
+  }
+}
+
+.apart-col {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.tour-image {
+  position: relative;
+  height: 8rem;
+  img {
+    object-fit: cover;
+  }
+}
+
+.tour-detail {
+  padding: 0;
+}
+
+.tour-title {
+  position: absolute;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3rem;
+  bottom: 0;
+  margin: 0.5rem;
+}
+
+.tour-btn {
+  margin-top: 0;
+  background-color: $teal;
+  &:hover {
+    background-color: darken($teal, 20%);
+  }
+}
+
+.tour-col {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: lighten(black, 90%);
+}
+
+.tour-sect-title {
+  color: $teal;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.gen-margin {
+  margin: 0 2rem;
+}
+.gen-padding {
+  padding: 0 2rem;
+}
+
+.apart-main-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.apart-main-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid white;
+  }
+  .description {
+    padding: 10px 0;
+    color: $gold;
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
+.cover-dark {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.apart-slider {
+  padding: 0 2rem;
+}
+
+.apart-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $gold;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+  i {
+    margin-right: 5px;
+  }
+  .divider {
+    border-top: 1px solid $gold;
+    width: 100%;
+    margin: 2px 0 0 15px;
+  }
+}
+
+.apart-text {
+  color: white;
+  background-color: $gold;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }

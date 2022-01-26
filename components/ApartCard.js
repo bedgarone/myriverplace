@@ -17,7 +17,9 @@ const ApartCard = () => {
         </div>
         <div className="apart-title">Apartment #4</div>
         <div className="apart-building">General Torres Builing</div>
-        <div className="apart-description">River view and shared balcony</div>
+        <div className="apart-description">
+          Up to 6 <i class="bi bi-person-fill"></i>
+        </div>
         <div className="apart-btn">Apartment Details</div>
       </div>
     </div>
