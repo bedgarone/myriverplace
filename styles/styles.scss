@@ -8,6 +8,8 @@ $beige: #e8d0b3;
 $text: rgb(26, 26, 26);
 $greybeige: #f5f2ef;
 
+$darkteal: darken($teal, 35%);
+
 .main {
   min-height: 100vh;
 }
@@ -200,7 +202,7 @@ $greybeige: #f5f2ef;
 
 .cover-dark {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
 }
@@ -221,6 +223,24 @@ $greybeige: #f5f2ef;
   }
   .divider {
     border-top: 1px solid $gold;
+    width: 100%;
+    margin: 2px 0 0 10px;
+  }
+}
+
+.tour-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $brown;
+  font-size: 1.1em;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  i {
+    margin-right: 5px;
+  }
+  .divider {
+    border-top: 1px solid $darkteal;
     width: 100%;
     margin: 2px 0 0 10px;
   }
@@ -312,6 +332,112 @@ $greybeige: #f5f2ef;
   }
   img {
     height: 2rem;
-    margin-top: 3px;
+    margin-top: 5px;
+  }
+}
+
+.footer {
+  background-color: $brown;
+  padding: 0.7rem;
+  font-size: 0.7em;
+  color: $gold;
+  text-align: center;
+  a:hover {
+    color: lighten($gold, 10%);
+    cursor: pointer;
+  }
+}
+
+.grey-backg {
+  background-color: #f5f2ef;
+  padding: 1rem 0;
+}
+
+.tour-main-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 15rem;
+  background-color: $teal;
+}
+
+.tour-backg {
+  background-color: #e6e6e6;
+}
+
+.tour-slider {
+  position: relative;
+  margin: -2rem 2rem 2rem 2rem;
+}
+
+.tour-main-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  .title {
+    font-size: 1.5em;
+    color: $darkteal;
+    font-weight: 700;
+    margin: 0.8rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+  }
+}
+
+.extra-costs {
+  display: flex;
+  flex-direction: column;
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    color: $darkteal;
+  }
+  i {
+    color: rgba(0, 0, 0, 0.1);
+    margin-left: -3px;
+    margin-right: 3px;
+  }
+  .value {
+    background-color: $teal;
+    color: white;
+    padding: 0.2rem 0.3rem;
+    margin-left: 5px;
+    white-space: nowrap;
+  }
+}
+
+.transportation {
+  background-color: $brown;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.1em;
+  i {
+    margin-right: 5px;
+  }
+}
+.transp-description {
+  background-color: lighten($brown, 10%);
+  padding: 1rem 2rem;
+  color: white;
+  .option {
+    color: $gold;
+    font-size: 0.8em;
+    padding-top: 0.5rem;
+  }
+}
+
+.tour-main-details {
+  margin-left: 2rem;
+  .time {
+    font-size: 1.3em;
+    margin-bottom: 0.3rem;
+  }
+  .meet-point {
+    font-size: 0.8em;
   }
 }

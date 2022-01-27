@@ -1,5 +1,6 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
+import Footer from "../../components/Footer";
 
 const Apartment = () => {
   const images = [
@@ -18,7 +19,7 @@ const Apartment = () => {
         <div className="cover-dark"></div>
         <img src="/assets/main01.jpg" />
         <div className="apart-main-container">
-          <div className="title">Apartment #01</div>
+          <div className="title">My River Place #1</div>
         </div>
       </div>
       <div className="apart-text gen-padding">
@@ -48,14 +49,20 @@ const Apartment = () => {
           <div className="subtitle">3 single beds</div>
         </div>
       </div>
-      <div className="apart-section gen-margin gen-mt">
-        <i className="bi bi-camera"></i>Gallery
-        <div className="divider"></div>
+      <div className="grey-backg gen-mt">
+        <div className="apart-section gen-margin">
+          <i className="bi bi-camera"></i>Gallery
+          <div className="divider"></div>
+        </div>
+        <div className="apart-slider">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+          />
+        </div>
       </div>
-      <div className="apart-slider">
-        <ImageGallery items={images} />
-      </div>
-      <div className="check-in  gen-mt">
+      <div className="check-in">
         <div>
           <i className="bi bi-door-closed"></i>
           <strong>EASY CHECK&#8209;IN</strong>
@@ -89,6 +96,7 @@ const Apartment = () => {
           <img src="/assets/airbnb.png" alt="airbnb logo" />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

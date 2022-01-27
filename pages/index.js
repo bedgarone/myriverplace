@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ApartCard from "../components/ApartCard";
+import Footer from "../components/Footer";
 import TourCard from "../components/TourCard";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
           </div>
           <TourCard />
         </div>
+        <Footer />
       </main>
     </div>
   );
