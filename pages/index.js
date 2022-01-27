@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className="tour-col">
           <div className="tour-sect-title">
-            <i class="bi bi-signpost-2-fill"></i> Tours
+            <i className="bi bi-signpost-2-fill"></i> Tours
           </div>
           <TourCard />
         </div>

@@ -18,6 +18,11 @@ $greybeige: #f5f2ef;
   justify-content: flex-end;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .main-image {
   background-image: url("/assets/main01.jpg");
   background-size: cover;
@@ -150,6 +155,11 @@ $greybeige: #f5f2ef;
 .gen-margin {
   margin: 0 2rem;
 }
+
+.gen-mt {
+  margin-top: 2rem;
+}
+
 .gen-padding {
   padding: 0 2rem;
 }
@@ -159,7 +169,7 @@ $greybeige: #f5f2ef;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 20rem;
+  height: 15rem;
 
   img {
     height: 100%;
@@ -173,7 +183,7 @@ $greybeige: #f5f2ef;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 2rem;
   .title {
     font-size: 1.5em;
     color: white;
@@ -212,13 +222,96 @@ $greybeige: #f5f2ef;
   .divider {
     border-top: 1px solid $gold;
     width: 100%;
-    margin: 2px 0 0 15px;
+    margin: 2px 0 0 10px;
   }
 }
 
 .apart-text {
+  position: relative;
   color: white;
   background-color: $gold;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin: -2rem 2rem 2rem 2rem;
+}
+
+.check-in {
+  background-color: $teal;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.1em;
+  i {
+    margin-right: 5px;
+  }
+  .description {
+    font-size: 0.9em;
+    text-align: end;
+    font-weight: 200;
+  }
+}
+
+.spaces {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+.space {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: $brown;
+  color: white;
+  min-width: 10rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+  i,
+  .subtitle {
+    color: $gold;
+  }
+}
+
+.amenities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .item {
+    margin: 0 10px 10px 0;
+    color: $brown;
+  }
+  i {
+    color: rgba(0, 0, 0, 0.1);
+    margin-left: -3px;
+    margin-right: 3px;
+  }
+}
+
+.book-apt {
+  background-color: $gold;
+  padding: 2rem;
+  font-size: 1.2em;
+  text-align: center;
+  color: $brown;
+  font-weight: 200;
+}
+
+.book-btn {
+  background-color: #ff5a5f;
+  color: white;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 0 0;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-color: darken(#ff5a5f, 5%);
+    transition: 0.5s;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+  img {
+    height: 2rem;
+    margin-top: 3px;
+  }
 }
