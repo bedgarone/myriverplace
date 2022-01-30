@@ -336,6 +336,13 @@ $darkteal: darken($teal, 35%);
   }
 }
 
+.book-btn-tour {
+  background-color: #6dac39;
+  &:hover {
+    background-color: darken(#6dac39, 5%);
+  }
+}
+
 .footer {
   background-color: $brown;
   padding: 0.7rem;
@@ -368,7 +375,7 @@ $darkteal: darken($teal, 35%);
 
 .tour-slider {
   position: relative;
-  margin: -2rem 2rem 2rem 2rem;
+  margin: -2rem 2rem 0rem 2rem;
 }
 
 .tour-main-container {
@@ -432,12 +439,81 @@ $darkteal: darken($teal, 35%);
 }
 
 .tour-main-details {
-  margin-left: 2rem;
+  padding: 1rem 20px;
+  color: $darkteal;
   .time {
+    background-color: $teal;
+    width: fit-content;
+    color: white;
+    padding: 0.2rem 0.5rem;
     font-size: 1.3em;
     margin-bottom: 0.3rem;
   }
   .meet-point {
     font-size: 0.8em;
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+.changes {
+  font-size: 0.8em;
+  color: $teal;
+}
+
+//timeline adapted from https://codepen.io/TajShireen/pen/JjGvVzg
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-line {
+  margin-left: 1rem;
+  border-left: 6px solid lighten($teal, 10%);
+}
+
+.timeline {
+  margin: 0;
+  li {
+    padding-bottom: 1.5rem;
+    border-left: 6px solid lighten($teal, 10%);
+    position: relative;
+    padding-left: 20px;
+    margin-left: 1rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &:before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background-color: $teal;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      top: 2px;
+    }
+    h4 {
+      margin: 0;
+      background-color: $teal;
+      width: fit-content;
+      padding: 0.1rem 0.3rem;
+      color: $darkteal;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+    h5 {
+      margin: 0;
+      font-size: 1rem;
+      color: $brown;
+    }
+    p {
+      margin: 0;
+      padding: 0.5rem 0;
+      font-size: 0.8rem;
+      color: $darkteal;
+    }
   }
 }

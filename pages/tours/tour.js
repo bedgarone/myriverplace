@@ -30,17 +30,46 @@ const Tour = () => {
           showPlayButton={false}
         />
       </div>
-      <div className="tour-main-details gen-padding">
-        <div className="time">
-          <i class="bi bi-stopwatch"></i> 8 hours
+      <div className="gen-margin">
+        <div className="tour-main-details extra-line">
+          <div className="time">
+            <i className="bi bi-stopwatch"></i> 8 hours
+          </div>
+          <div className="meet-point">
+            <i className="bi bi-geo"></i>Cruise Port, Address or Intersection
+          </div>
         </div>
-        <div className="meet-point">
-          <i class="bi bi-geo"></i>Cruise Ship Port, Address or Intersection
+      </div>
+      <ul className="timeline gen-padding">
+        <li>
+          <h4>8:30</h4>
+          <h5>Departure</h5>
+        </li>
+        <li>
+          <h4>10:00</h4>
+          <h5>Arrival to Pinhão</h5>
+          <p>
+            My suggestion goes to a relaxed cruise along the dazzling Douro
+            River in the typical "Rabelo" boat, to enjoy the vineyards and
+            terraces along this amazing Valley.
+          </p>
+        </li>
+        <li>
+          <h5>Lunch</h5>
+          <p>Difficult decisions to make! :)</p>
+        </li>
+      </ul>
+      <div className="gen-margin">
+        <div className="tour-main-details extra-line">
+          <div className="changes">
+            The tour timeline will never be strict. Changes are always possible
+            and will be suggested during previous contacts.
+          </div>
         </div>
       </div>
       <div className="transportation">
         <div>
-          <i class="bi bi-signpost-fill"></i>
+          <i className="bi bi-signpost-fill"></i>
           Transportation
         </div>
       </div>
@@ -56,7 +85,7 @@ const Tour = () => {
         </div>
       </div>
       <div className="tour-section gen-margin gen-mt">
-        <i class="bi bi-wallet2"></i>Extra optional costs
+        <i className="bi bi-wallet2"></i>Extra optional costs
         <div className="divider"></div>
       </div>
       <div className="extra-costs gen-margin">
@@ -76,8 +105,8 @@ const Tour = () => {
       </div>
       <div className="book-apt gen-mt">
         Book this tour on
-        <div className="book-btn">
-          <img src="/assets/airbnb.png" alt="airbnb logo" />
+        <div className="book-btn book-btn-tour">
+          <img src="/assets/toursbylocals.png" alt="toursbylocals logo" />
         </div>
       </div>
       <Footer />
