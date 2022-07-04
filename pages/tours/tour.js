@@ -50,7 +50,7 @@ const Tour = () => {
           <h5>Arrival to Pinhão</h5>
           <p>
             My suggestion goes to a relaxed cruise along the dazzling Douro
-            River in the typical "Rabelo" boat, to enjoy the vineyards and
+            River in the typical Rabelo boat, to enjoy the vineyards and
             terraces along this amazing Valley.
           </p>
         </li>
@@ -90,8 +90,8 @@ const Tour = () => {
       </div>
       <div className="extra-costs gen-margin">
         <div className="item">
-          <i className="bi bi-caret-right-fill"></i>Tasting visit at "Quinta do
-          Seixo"
+          <i className="bi bi-caret-right-fill"></i>Tasting visit at Quinta do
+          Seixo
           <div className="value">10€ p.p.</div>
         </div>
         <div className="item">
